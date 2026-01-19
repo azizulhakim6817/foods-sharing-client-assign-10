@@ -1,6 +1,16 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Client side vercel deploy-----------------------------
+
+2. https://smart-deals-server-10.vercel.app/latest-products
+
+# Server side vercel deploy ----------------------------------
+
+--- https://smart-deals-server-10.vercel.app/latest-products
+
+3. netlify deploy
+   public folder -- create file => \_redirects /\* /index.html 200
+   This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
 

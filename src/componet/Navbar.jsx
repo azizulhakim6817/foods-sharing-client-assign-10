@@ -73,7 +73,9 @@ const Navbar = () => {
 
         <Link to="/" className="flex gap-2 items-center">
           <img src={logo} alt="logo" className="w-8 h-8 md:w-10 md:h-10" />
-          <span className="hidden md:block text-2xl font-bold">PlateShare</span>
+          <span className="hidden md:block text-2xl font-bold">
+            FOOD🔸SHARE
+          </span>
         </Link>
       </div>
 

@@ -6,11 +6,7 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  /* background add url image */
-  background-image: url("../../assets/banner.avif");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
@@ -21,7 +17,23 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0); /* overlay color */
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* slide-1 background add url image */
+.slide-one {
+  background-image: url("../../assets/banner.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* siled-2 background add url image */
+.slide-two {
+  background-image: url("../../assets/banner-2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .swiper-slide img {
@@ -31,21 +43,10 @@
   object-fit: cover;
 }
 
-/* Custom add---------my */
-/* Move the right arrow 200px from the right */
-/* .swiper-button-next {
-  margin-right: 65px;
-} */
-
-/* Move the left arrow 200px from the left */
-/* .swiper-button-prev {
-  margin-left: 42px;
-} */
-
 /* Optional: styling arrows */
 .swiper-button-next,
 .swiper-button-prev {
   width: 40px;
   height: 40px;
-  color: #f06225; /* arrow color */
+  color: #f06225;
 }
