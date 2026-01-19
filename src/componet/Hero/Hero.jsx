@@ -36,12 +36,11 @@ const Hero = () => {
             <div className="absolute inset-0 bg-black/50">
               <div>
                 <h1 className="my-16 md:mt-24 text-2xl text-white md:text-4xl font-bold mb-4">
-                  Share Food, Spread Love
+                  Spicy Chicken Burger
                 </h1>
                 <p className="mx-4 text-[14px] mb-10 md:mb-4 text-gray-300">
-                  PlateShare connects kind people with surplus food. <br />
-                  Share meals, help others, and build a caring community
-                  together.
+                  Grilled patty layered with cheese, crisp veggies, and
+                  signature sauce, packed with flavor in every bite.
                 </p>
               </div>
 
@@ -79,11 +78,13 @@ const Hero = () => {
             <div className="absolute inset-0 bg-black/50">
               <div>
                 <h1 className="my-16 md:mt-24 text-2xl text-white md:text-3xl font-bold mb-4">
-                  Reduce Waste, Save Food
+                  Chicken Biryani
                 </h1>
                 <p className="text-[15px] mb-10 md:mb-4 text-gray-300">
-                  Millions of meals go to waste every day. <br />
-                  PlateShare helps you give extra food a second chance.
+                  Aromatic basmati rice cooked with tender chicken, traditional{" "}
+                  <br></br>
+                  spices, and slow-cooked to perfection. A classic favorite full
+                  of rich flavor
                 </p>
               </div>
 
