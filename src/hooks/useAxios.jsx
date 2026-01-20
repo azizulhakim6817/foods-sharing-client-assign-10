@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:5000",
+  baseURL: "https://foods-sharing-server-assign-10.vercel.app",
 });
 
 export default axiosInstance;
