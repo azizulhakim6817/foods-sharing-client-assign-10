@@ -3,22 +3,22 @@ import { Link } from "react-router";
 const FoodCard = ({ food }) => {
   return (
     <div className="group my-2 card bg-base-100  shadow-md hover:shadow-xl transition-all duration-300">
-      {/* Image */}
+      {/* Image---- */}
       <figure className="relative">
         <img
           src={food.foodImage}
           alt={food.foodName}
           className="h-44 w-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
-        {/* Status Badge */}
+        {/* Status Badge ----*/}
         <span className="absolute text-white bg-[#F06225] top-2 left-2 badge badge-success ">
           {food.food_status}
         </span>
       </figure>
       <div className="p-4 space-y-3">
-        {/* Food Name */}
+        {/* Food Name ---*/}
         <h2 className="text-lg font-bold line-clamp-1">{food.foodName}</h2>
-        {/* Donator */}
+        {/* Donator ------*/}
         <div className="flex items-center gap-3">
           <img
             src={food.donator_image}
@@ -30,24 +30,28 @@ const FoodCard = ({ food }) => {
             <p className="text-xs text-gray-500">Food Donator</p>
           </div>
         </div>
-        {/* 2 column div */}
+        {/* 2 column div ------*/}
         <div className="grid grid-cols-2 gap-x-4 gap-y-1 text-sm text-gray-600">
+          {/* Quantity */}
           <p>
             <span className="font-medium">Quantity : Servers </span>
             <br className=" block md:hidden" />
             {food.foodQuantity} people
           </p>
+          {/* Pickup */}
           <p>
             <span className="font-medium">Pickup : </span>
             <br className=" block md:hidden" />
             {food.pickupLocation}
           </p>
-          <p className="">
+          {/* expire */}
+          <p>
             <span className="font-medium">Expire : </span>
             <br className=" block md:hidden" />
             {food.expireDate}
           </p>
-          <p className="">
+          {/* createdAt */}
+          <p>
             <span className="font-medium">Created At : </span>
             <br className=" block md:hidden" />
             {new Date(food.createdAt).toLocaleDateString("en-GB", {
