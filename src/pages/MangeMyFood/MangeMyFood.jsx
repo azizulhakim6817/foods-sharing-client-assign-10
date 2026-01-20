@@ -209,19 +209,19 @@ const ManageMyFood = () => {
           <h2 className="text-xl font-bold text-center text-[#F06225]">
             Update Food
           </h2>
-
+          {/* foodImage */}
           <label className="label font-semibold text-gray-500">
             Food Name:
           </label>
           <input
             type="text"
-            name="foodName"
+            name="foo/*  */dName"
             value={selectedFood.foodName}
             onChange={handleChange}
             className="input input-bordered w-full"
             required
           />
-
+          {/* foodImage */}
           <label className="label font-semibold text-gray-500">
             Food Image URL:
           </label>
@@ -233,7 +233,7 @@ const ManageMyFood = () => {
             className="input w-full"
             required
           />
-
+          {/* foodQuantity */}
           <label className="label font-semibold text-gray-500">Quantity:</label>
           <input
             type="text"
@@ -243,7 +243,7 @@ const ManageMyFood = () => {
             className="input w-full"
             required
           />
-
+          {/* pickupLocation */}
           <label className="label font-semibold text-gray-500">
             Pickup Location:
           </label>
@@ -255,7 +255,7 @@ const ManageMyFood = () => {
             className="input w-full"
             required
           />
-
+          {/* expireDate */}
           <label className="label font-semibold text-gray-500">
             Expire Date:
           </label>
@@ -267,7 +267,7 @@ const ManageMyFood = () => {
             className="input w-full"
             required
           />
-
+          {/* additional notes */}
           <label className="label font-semibold text-gray-500">
             Additional Notes:
           </label>
@@ -282,14 +282,20 @@ const ManageMyFood = () => {
           <label className="label font-semibold text-gray-500">
             Food Status:
           </label>
-          <input
-            type="text"
+          {/* food_status */}
+          <select
             name="food_status"
             value={selectedFood.food_status}
             onChange={handleChange}
-            className="input w-full"
+            className="select select-bordered w-full"
             required
-          />
+          >
+            <option value="" disabled>
+              Select food status
+            </option>
+            <option value="Available">Available</option>
+            <option value="Pending">Pending</option>
+          </select>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-2">
             <button

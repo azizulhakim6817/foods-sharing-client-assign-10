@@ -36,7 +36,7 @@ const Home = () => {
       {/* Foods 6 itmes ------------- */}
       <div>
         <h2 className="text-3xl my-8 text-center font-bold mb-8 text-[#F06225]">
-          How It Works
+         Featured Foods
         </h2>
       </div>
       <div className="my-4 md:px-8 mt-6 gap-4 mx-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">

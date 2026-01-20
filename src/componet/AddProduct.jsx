@@ -112,15 +112,19 @@ const AddProduct = () => {
               placeholder="Additional notes..."
             />
             {/*food_status  */}
-            <label className="label font-semibold text-gray-500">
-              Food status :
-            </label>
-            <input
-              type="text"
+            <select
               name="food_status"
-              className="input w-full"
-              placeholder="Food status..."
-            />
+              defaultValue=""
+              className="select select-bordered w-full"
+              required
+            >
+              <option value="" disabled>
+                Select food status
+              </option>
+              <option value="Available">Available</option>
+              <option value="pending">Pending</option>
+            </select>
+
             {/*Donator name */}
             <label className="label font-semibold text-gray-500">
               Donator name :

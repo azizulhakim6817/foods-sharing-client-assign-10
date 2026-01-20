@@ -48,11 +48,16 @@ const Login = () => {
 
   //! googleSignUp -----------------
   const handlegoogleSignUp = () => {
-    googleSignUp().then((result) => {
-      console.log(result.user);
-      toast.success("Login successful");
-      navigate(locatoin.state || "/");
-    });
+    googleSignUp()
+      .then((result) => {
+        console.log(result.user);
+        toast.success("Login successful");
+        navigate(locatoin.state || "/");
+      })
+      .catch((error) => {
+        console.error(error);
+        toast.error("Google login failed");
+      });
   };
 
   //!Toggle password ----------------------------

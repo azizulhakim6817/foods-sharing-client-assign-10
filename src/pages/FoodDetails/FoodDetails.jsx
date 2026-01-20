@@ -10,6 +10,7 @@ const FoodDetails = () => {
   const { id } = useParams();
   const [food, setFood] = useState(null);
   const [foodRequest, setFoodRequest] = useState([]);
+  console.log(foodRequest);
   const [refetch, setRefetch] = useState(false);
 
   const { user } = useAuth();
@@ -246,6 +247,7 @@ const FoodDetails = () => {
         </dialog>
       </div>
       {/* table --------------------------------*/}
+
       <div>
         <div className="mb-20 overflow-x-auto bg-white rounded-md px-2 md:px-42">
           <h1 className="mb-6 text-center text-xl md:text-3xl font-bold text-[#F06225]">
