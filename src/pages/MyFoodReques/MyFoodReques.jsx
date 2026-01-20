@@ -55,7 +55,7 @@ const MyFoodRequest = () => {
         </h1>
       </div>
 
-      <div className="mb-20 overflow-x-auto bg-white rounded-md px-2 md:px-8">
+      <div className="mb-20 overflow-x-auto rounded-md px-2 md:px-8">
         <table className="table w-full">
           <thead>
             <tr>

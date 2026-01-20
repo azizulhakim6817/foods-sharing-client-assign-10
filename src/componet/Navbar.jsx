@@ -99,7 +99,7 @@ const Navbar = () => {
       {/* right */}
       <div className="navbar-end">
         {/* Toggle (switch) -----------*/}
-        <div className="mr-2">
+        <div className="mr-3">
           <input
             type="checkbox"
             onChange={(e) => handleTheme(e.target.checked)}

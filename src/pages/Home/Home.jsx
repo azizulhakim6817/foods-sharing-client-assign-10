@@ -36,7 +36,7 @@ const Home = () => {
       {/* Foods 6 itmes ------------- */}
       <div>
         <h2 className="text-3xl my-8 text-center font-bold mb-8 text-[#F06225]">
-         Featured Foods
+          Featured Foods
         </h2>
       </div>
       <div className="my-4 md:px-8 mt-6 gap-4 mx-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -47,7 +47,7 @@ const Home = () => {
       {/* two additional static sections------------------*/}
       <div className="my-4 text-center">
         {/* How It Works Section */}
-        <section className="px-4 py-8 bg-white text-center">
+        <section className="px-4 py-8 text-center">
           <h2 className="text-3xl font-bold mb-8 text-[#F06225]">
             How It Works
           </h2>
@@ -74,7 +74,7 @@ const Home = () => {
         </section>
 
         {/* Our Mission Section */}
-        <section className="px-4 py-6 md:py-14 bg-gray-50 text-center">
+        <section className="px-4 py-6 md:py-14  text-center">
           <h2 className="text-3xl font-bold mb-4 text-[#F06225]">
             Our Mission
           </h2>
