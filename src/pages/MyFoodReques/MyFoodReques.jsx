@@ -1,12 +1,8 @@
 import { Check } from "lucide-react";
-import useAuth from "../../hooks/useAuth";
 import { useState, useEffect } from "react";
-import { useParams } from "react-router";
 import axiosInstance from "../../hooks/useAxios";
 
 const MyFoodRequest = () => {
-  const { id } = useParams();
-  const { user } = useAuth();
   const [food, setFood] = useState([]);
   const [refetch, setRefetch] = useState(false);
 
