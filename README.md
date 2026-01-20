@@ -2,7 +2,7 @@
 
 # Client side vercel deploy-----------------------------
 
-2. https://smart-deals-server-10.vercel.app/latest-products
+2. https://foods-sharing-client-assign-10.vercel.app/
 
 # Server side vercel deploy ----------------------------------
 
