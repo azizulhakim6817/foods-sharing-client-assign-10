@@ -6,7 +6,7 @@
 
 # Server side vercel deploy ----------------------------------
 
---- https://smart-deals-server-10.vercel.app/latest-products
+--- https://foods-sharing-server-assign-10.vercel.app/get-foods
 
 ## Project Overview
 
