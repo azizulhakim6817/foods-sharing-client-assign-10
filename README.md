@@ -13,7 +13,7 @@
 Project Name: Food Share
 Theme: Community Food Sharing
 
-PlateFood Share  is a full-stack MERN (MongoDB, Express.js, React, Node.js) application where users can share their surplus food with the community. The main goal is to reduce food waste and help people in need.
+PlateFood Share is a full-stack MERN (MongoDB, Express.js, React, Node.js) application where users can share their surplus food with the community. The main goal is to reduce food waste and help people in need.
 
 Users can:
 Post food items they want to donate
@@ -53,6 +53,7 @@ Add deployed domain to Firebase authorization if using Netlify/Surge
 Logged-in users should not be redirected to Login on private route reload
 
 Main Requirements
+
 ## 1️⃣ Layout Structure
 
 Navbar:
@@ -156,5 +157,7 @@ Update: Pre-filled form → submit → update MongoDB
 Delete: Confirmation prompt (SweetAlert) → delete MongoDB document
 
 ## 5️⃣ Other Requirements
+
 Loading spinner or skeleton loader while fetching data
+
 404 Error Page with image/GIF + Back to Home button
