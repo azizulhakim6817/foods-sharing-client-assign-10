@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 const AddProduct = () => {
   const { user } = useAuth();
 
-  //!handleSubmit--------------------
+  //!handleSubmit-------------
   const handleSubmit = (e) => {
     e.preventDefault();
     const foodName = e.target.name.value;
@@ -61,7 +61,7 @@ const AddProduct = () => {
               className="input w-full"
               placeholder="Food Name..."
             />
-            {/*Image  */}
+            {/*Image---  */}
             <label className="label font-semibold text-gray-500">
               Fool image URL :
             </label>
@@ -71,7 +71,7 @@ const AddProduct = () => {
               className="input w-full"
               placeholder="Fool image URL..."
             />
-            {/*quantity  */}
+            {/*quantity-- */}
             <label className="label font-semibold text-gray-500">
               Fool quantity :
             </label>
@@ -81,7 +81,7 @@ const AddProduct = () => {
               className="input w-full"
               placeholder="Quantity..."
             />
-            {/*pickup_location  */}
+            {/*pickup_location--  */}
             <label className="label font-semibold text-gray-800">
               Pickup location :
             </label>
@@ -91,7 +91,7 @@ const AddProduct = () => {
               className="input w-full"
               placeholder="Pickup location..."
             />
-            {/*expire_date  */}
+            {/*expire_date--  */}
             <label className="label font-semibold text-gray-500">
               Expire Date :
             </label>
@@ -101,7 +101,7 @@ const AddProduct = () => {
               className="input w-full"
               placeholder="Expire date..."
             />
-            {/*additional_notes  */}
+            {/*additional_notes--  */}
             <label className="label font-semibold text-gray-500">
               Additional notes :
             </label>
@@ -111,7 +111,7 @@ const AddProduct = () => {
               className="input w-full"
               placeholder="Additional notes..."
             />
-            {/*food_status  */}
+            {/*food_status -- */}
             <select
               name="food_status"
               defaultValue=""
@@ -125,7 +125,7 @@ const AddProduct = () => {
               <option value="pending">Pending</option>
             </select>
 
-            {/*Donator name */}
+            {/*Donator name--- */}
             <label className="label font-semibold text-gray-500">
               Donator name :
             </label>
@@ -135,7 +135,7 @@ const AddProduct = () => {
               className="input w-full"
               placeholder="Donator name..."
             />
-            {/*donator_email  */}
+            {/*donator_email --- */}
             <label className="label font-semibold text-gray-500">
               Donator email :
             </label>
@@ -145,7 +145,7 @@ const AddProduct = () => {
               className="input w-full"
               placeholder="Eonator email..."
             />
-            {/*donator_image  */}
+            {/*donator_image  --*/}
             <label className="label font-semibold text-gray-500">
               Donator image URL :
             </label>
