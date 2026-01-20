@@ -19,6 +19,7 @@ const Register = () => {
     const password = e.target.password.value;
     const photo = e.target.photo.value.trim();
     //console.log(name, email, password, photo);
+
     //! regex-> password must be--------
     const isShortPassword = password.length < 6;
     const hasUppercase = /[A-Z]/.test(password);
@@ -39,7 +40,7 @@ const Register = () => {
     try {
       const createUser = await register(email, password);
       const user = createUser.user;
-      console.log("user", user);
+      //console.log("user", user);
       toast.success("Registration completed successfully");
       navigate("/login");
     } catch (error) {
