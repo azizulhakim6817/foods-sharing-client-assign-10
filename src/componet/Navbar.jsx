@@ -9,7 +9,6 @@ import { AuthContext } from "../context/AuthContext";
 const Navbar = () => {
   const navigate = useNavigate();
   const { user, signOutUser } = useContext(AuthContext);
-
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -58,6 +57,19 @@ const Navbar = () => {
     </>
   );
 
+  //! theme toggle switch button ---------
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "winter");
+  useEffect(() => {
+    const html = document.querySelector("html");
+    html.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  //* handle Theme button------------
+  const handleTheme = (checked) => {
+    setTheme(checked ? "night" : "winter");
+  };
+
   return (
     <div className="navbar px-4 md:px-12 bg-base-100 shadow-sm">
       {/* left */}
@@ -86,6 +98,15 @@ const Navbar = () => {
 
       {/* right */}
       <div className="navbar-end">
+        {/* Toggle (switch) -----------*/}
+        <div className="mr-2">
+          <input
+            type="checkbox"
+            onChange={(e) => handleTheme(e.target.checked)}
+            defaultChecked
+            className="toggle"
+          />
+        </div>
         {user ? (
           <div className="relative" ref={dropdownRef}>
             {/* avatar */}
